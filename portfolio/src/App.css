@@ -1,3 +1,7 @@
+
+html {
+  scroll-behavior: smooth;
+}
 /* navbar */
 
 .navbar{
@@ -8,6 +12,14 @@
 .navbar.colorChange{
   background-color: white;
 }
+.nav-setting:active{
+  text-decoration: underline;
+  
+
+}
+.nav-bar{
+  
+}
 
 
 /* main */
@@ -16,7 +28,7 @@
   background-image: url("https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
   background-size: cover;
   height: 90vh;
-  /* width: 100vw; */
+  width: 100vw;
   /* -webkit-clip-path: polygon(0 54%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 54%, 100% 0, 100% 100%, 0 100%); */
 }
@@ -24,22 +36,72 @@
   background-color: rgb(26, 24, 24);
   height:50vh;
   width: 70vw;
-  opacity: 0.6;
-  color:gray;
+  opacity: 0.8;
+  color:white;
   border-radius: 15px;
 }
 hr{
 
   background-color: white;
 }
-
+.icon-react{
+  color:aqua;
+  font-size: 60px;
+  margin:10px
+}
+.icon-mongo{
+  color:green;
+  font-size: 60px;
+  margin:10px
+}
+.icon-express{
+  color: white;
+  font-size: 60px;
+  margin:10px
+}
+.icon-node{
+  color:greenyellow;
+  font-size:60px;
+  margin:10px
+}
+.icon-js{
+  color:yellow;
+  font-size: 60px;
+  margin:10px
+}
+.icon-bs{
+  color:purple;
+  font-size: 60px;
+  margin:10px
+}
+.icon-html{
+  color:orange;
+  font-size: 60px;
+  margin:10px
+}
+.icon-css{
+  color:blue;
+  font-size: 60px;
+  margin:10px
+}
+.icon-sass{
+  color:plum;
+  font-size: 60px;
+  margin:10px
+}
+.icon-postg{
+  color:rgb(74, 104, 185);
+  font-size: 60px;
+  margin:10px
+}
+/* bio */
 .bio-bg{
   /* background-color: linear-gradient( blue, pink); */
     /* background-image: url("../public/assets/bio-img.jpg"); */
-    background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(70,70,73,1) 100%);
+    /* background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(70,70,73,1) 100%);
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    width: 100%; */
     /* opacity: 0.4; */
     /* position:relative; */
     
@@ -48,9 +110,9 @@ hr{
 .bio-text{
   background-color: rgb(26, 24, 24);
   height:80vh;
-  width: 50vw;
-  /* opacity: 0.6; */
-  color:gray;
+  width: 45vw;
+  opacity: 0.9;
+  color:white;
   border-radius: 15px;
   /* margin-left: 500px; */
   padding:3em;
@@ -62,12 +124,39 @@ hr{
 .col-bg{
    background-image: url("../public/assets/bio-img.jpg");
    background-size: cover;
-   opacity: 0.4;
+   opacity: 0.8;
    border-radius: 15px;
    /* margin-top: 8em; */
    height: 100vh;
-   width: 100vw;
+   width: 101vw;
+   
 }
 .info{
-  color:white;
+  color:black;
 } 
+.bio-intro{
+  background: linear-gradient(150deg, rgb(161, 159, 159) 0%, rgb(53, 53, 56) 100%);
+    /* background-size: cover; */
+    height: 20vh;
+    width: 10px;
+    padding:25px;
+    margin-left: 15px;
+    margin-top:90px;
+    border-radius: 15px;
+    opacity: 0.8;
+  
+}
+
+
+
+/* Carosel */
+/* .slide{
+  height: 70vh;
+  width: 100vw;
+  
+} */
+.img{
+  height: 100vh;
+  width: 100%;
+object-fit:cover;
+}

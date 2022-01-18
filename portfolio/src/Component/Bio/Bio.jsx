@@ -3,15 +3,17 @@ import { Row, Col } from "react-bootstrap";
 const Bio = () => {
   return (
     <>
-      <div className="bio-bg">
+      <div className="bio-bg mt-5" id="bio">
         <Row className="col-bg">
-          <Col md={6}>
+          {/* <Col/> */}
+          <Col md={3}className="ml-5 bio-intro">
 
-              <h3 className="info">Home/About</h3>
-              <h2>Hasham Zafar</h2>
-            {/* <img className="mt-5"width="400px"src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1640&q=80" alt="" /> */}
+              {/* <h3 className="info">Home/About</h3> */}
+              <h2 className="info">Hasham Zafar</h2>
+              <h4 className="info">MERN Developer</h4>
+         
           </Col>
-          {/* <Col md={3}></Col> */}
+         <Col/>
 
           <Col md={6}>
             <div className="bio-text ">

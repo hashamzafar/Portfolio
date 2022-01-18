@@ -18,9 +18,10 @@ const NavBar = () => {
       <Navbar.Brand href="#home">Hasham Zafar</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Bio</Nav.Link>
+        <Nav className="ml-auto ">
+          <Nav.Link  className="nav-setting"href="#jumbo">Home</Nav.Link>
+          <Nav.Link className="nav-setting"href="#bio">Bio</Nav.Link>
+          <Nav.Link href="#certifications">Certifications</Nav.Link>
           <Nav.Link href="#link">Works</Nav.Link>
           <Nav.Link href="#link">Contact</Nav.Link>
          
