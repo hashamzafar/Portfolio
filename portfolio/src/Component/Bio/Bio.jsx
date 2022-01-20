@@ -3,20 +3,22 @@ import { Row, Col } from "react-bootstrap";
 const Bio = () => {
   return (
     <>
-      <div className="bio-bg mt-5" id="bio">
-        <Row className="col-bg">
+      <div className="bio-bg mt-5 " id="bio">
+        <Row className="col-bg ">
           {/* <Col/> */}
-          <Col md={3}className="ml-5 bio-intro">
+          <Col style={{ width: "80vw" }} md={3}className="ml-5 bio-intro" >
 
               {/* <h3 className="info">Home/About</h3> */}
-              <h2 className="info">Hasham Zafar</h2>
-              <h4 className="info">MERN Developer</h4>
+              <div className="justify-content-center d-flex">
+              <img src="../assets/hz-logo.png" alt=" HZ" /></div>
+              <h2 className="info justify-content-center d-flex">Hasham Zafar</h2>
+              <h4 className="info justify-content-center d-flex">MERN Developer</h4>
          
           </Col>
          <Col/>
 
           <Col md={6}>
-            <div className="bio-text ">
+            <div className="bio-text " >
               <h4>Developer by day. Blogger by night.</h4>
               <p className="">
                 With a patient centred approach, I serve needs of the individual
