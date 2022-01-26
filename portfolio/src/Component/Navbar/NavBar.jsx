@@ -44,7 +44,7 @@ const NavBar = () => {
       }
     >
       <Navbar.Brand href="#home">
-        <img src="../assets/hat-hz.png" alt=" HZ" width={85} />{window.scrollY}
+        <img src="../assets/hat-hz.png" alt=" HZ" width={85} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

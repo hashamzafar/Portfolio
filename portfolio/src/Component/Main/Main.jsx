@@ -8,7 +8,7 @@ const Main =()=>{
       <>
       {/* <img src="../../assets/photo.jpg" alt="" /> */}
         <Jumbotron className="background" id="jumbo">
-   <div className="bg-text mt-5 p-5">
+   <div className="bg-text mt-5 p-5 ">
         <h1 className="">Full-Stack Web Developer/ React Developer</h1>
         <hr />
         <p>
