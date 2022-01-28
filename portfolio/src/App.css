@@ -1,29 +1,28 @@
-
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color: rgb(161, 159, 159);
+}
 /* navbar */
 
-.navbar{
-  background-color:gray;
-
+.navbar {
+  background-color: rgb(161, 159, 159);
 }
 
-.navbar.colorChange{
+.navbar.colorChange {
   background-color: black;
 }
-.navbar.colorGreen{
-  background-color:lightgreen;
+.navbar.colorGreen {
+  background-color: lightgreen;
 }
-.active{
+.active {
   text-decoration: underline;
-  color:lightgreen;
-
+  color: lightgreen;
 }
-
 
 /* main */
-.background{
+.background {
   background-image: url("../public/assets/photo.jpg");
   /* background-image: url(""); */
 
@@ -31,143 +30,181 @@ html {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-
 }
-.bg-text{
+.bg-text {
   background-color: rgb(26, 24, 24);
-  height:50vh;
+  height: 50vh;
   width: 70vw;
   opacity: 0.6;
-  color:white;
+  color: white;
   border-radius: 15px;
-
 }
-hr{
-
+hr {
   background-color: white;
 }
-.icon-react{
-  color:aqua;
+.icon-react {
+  color: aqua;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
 }
-.icon-mongo{
-  color:green;
+.icon-mongo {
+  color: green;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
 }
-.icon-express{
+.icon-express {
   color: white;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
 }
-.icon-node{
-  color:greenyellow;
-  font-size:60px;
-  margin:10px
-}
-.icon-js{
-  color:yellow;
+.icon-node {
+  color: greenyellow;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
 }
-.icon-bs{
-  color:purple;
+.icon-js {
+  color: yellow;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
 }
-.icon-html{
-  color:orange;
+.icon-bs {
+  color: purple;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
 }
-.icon-css{
-  color:blue;
+.icon-html {
+  color: orange;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
 }
-.icon-sass{
-  color:plum;
+.icon-css {
+  color: blue;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
 }
-.icon-postg{
-  color:rgb(74, 104, 185);
+.icon-sass {
+  color: plum;
   font-size: 60px;
-  margin:10px
+  margin: 10px;
+}
+.icon-postg {
+  color: rgb(74, 104, 185);
+  font-size: 60px;
+  margin: 10px;
 }
 /* bio */
-.bio-bg{
+.bio-bg {
   /* background-color: linear-gradient( blue, pink); */
-    /* background-image: url("../public/assets/bio-img.jpg"); */
-    background: linear-gradient(150deg, rgba(255,255,255,1) 0%, rgba(70,70,73,1) 100%);
-    /* background-size: cover; */
-    /* height: 100vh; */
-    width: 100vw;
-    /* opacity: 0.4; */
-    /* position:relative; */
-    
-
+  /* background-image: url("../public/assets/bio-img.jpg"); */
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(70, 70, 73, 1) 100%
+  );
+  /* background-size: cover; */
+  /* height: 100vh; */
+  width: 100vw;
+  /* opacity: 0.4; */
+  /* position:relative; */
 }
-.bio-text{
+.bio-text {
   background-color: rgb(26, 24, 24);
-  height:80vh;
+  height: 80vh;
   width: 42vw;
   /* opacity: 0.9; */
-  color:white;
+  color: white;
   border-radius: 15px;
   /* margin-left: 500px; */
-  padding:3em;
+  padding: 3em;
   /* position:absolute ; */
   margin-top: 90px;
   margin-left: 100px;
-
- 
 }
 
-.col-bg{
-   background-image: url("../public/assets/bio-img.jpg");
-   background-size: cover;
-   opacity: 0.8;
-   /* border-radius: 15px; */
-   /* margin-top: 8em; */
-   height: 100vh;
-   width: 100vw;
-  
+.col-bg {
+  background-image: url("../public/assets/bio-img.jpg");
+  background-size: cover;
+  opacity: 0.8;
+  /* border-radius: 15px; */
+  /* margin-top: 8em; */
+  height: 100vh;
+  width: 100vw;
 }
-.info{
-  color:black;
-} 
-.bio-intro{
-  background: linear-gradient(150deg, rgb(161, 159, 159) 0%, rgb(53, 53, 56) 100%);
-    /* background-size: cover; */
-    height: 20vh;
-    width: 10px;
-    padding:25px;
-    margin-left: 15px;
-    margin-top:90px;
-    border-radius: 15px;
-    opacity: 0.8;
-  
+.info {
+  color: black;
+}
+.bio-intro {
+  background: linear-gradient(
+    150deg,
+    rgb(161, 159, 159) 0%,
+    rgb(53, 53, 56) 100%
+  );
+  /* background-size: cover; */
+  height: 20vh;
+  width: 10px;
+  padding: 25px;
+  margin-left: 15px;
+  margin-top: 90px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+.patterns {
+  height: 20vh;
 }
 
+svg text {
+  font-family: "Cormorant Garamond", Serif;
+  /* font-family: Lora; */
+  letter-spacing: 7px;
+  stroke: #5d6468;
+  font-size: 10vh;
+  font-weight: 500;
+  stroke-width: 3;
+  /* font-size: 15vw; */
+  animation: textAnimate 5s infinite alternate;
+}
+@media screen and (max-width: 1366px) {
+  svg text {
+    font-size: 40px;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width: 1300px) {
+  svg text {
+    font-size: 80px;
+    font-weight: 400;
+  }
+}
 
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    /* fill: hsl(189, 68%, 75%); */
+    fill: #333;
+  }
 
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%, 0%);
+  }
+}
 /* Carosel */
 
-.img{
-border-radius: 15px;
-height: 70vh;
-margin-top: 5vh;
+.img {
+  border-radius: 15px;
+  height: 70vh;
+  margin-top: 5vh;
 }
 /* .section-bg{
   background-color: lightgreen;
   width: 100vw;
 } */
-.card-col{
+.card-col {
   /* height: 54vh; */
   border-radius: 15px;
   background-color: black;
-  color:white;
+  color: white;
   /* margin-left: 15px; */
 }

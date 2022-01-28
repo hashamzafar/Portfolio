@@ -3,22 +3,44 @@ import { Row, Col } from "react-bootstrap";
 const Bio = () => {
   return (
     <>
-      <div className="bio-bg mt-5 " id="bio">
+      <div className="bio-bg  " id="bio">
         <Row className="col-bg ">
           {/* <Col/> */}
-          <Col style={{ width: "80vw" }} md={3}className="ml-5 bio-intro" >
-
-              {/* <h3 className="info">Home/About</h3> */}
-              <div className="justify-content-center d-flex">
-              <img src="../assets/hz-logo.png" alt=" HZ" /></div>
-              <h2 className="info justify-content-center d-flex">Hasham Zafar</h2>
-              <h4 className="info justify-content-center d-flex">MERN Developer</h4>
-         
+          <Col style={{ width: "80vw" }} md={3} className="ml-5 bio-intro">
+            {/* <h3 className="info">Home/About</h3> */}
+            <div className="justify-content-center d-flex">
+              <img src="../assets/hz-logo.png" alt=" HZ" />
+            </div>
+            {/* <h2 className="info justify-content-center d-flex"> */}
+            <div className="patterns">
+              <svg width="100" height="100">
+                <defs>
+                  <pattern
+                    id="polka-dots"
+                    x="0"
+                    y="0"
+                    width="100"
+                    height="100"
+                    patternUnits="userSpaceOnUse"
+                  >
+                    <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+                  </pattern>
+                </defs>
+                <text x="100%" y="60%" text-anchor="middle">
+                  Hasham Zafar
+                </text>
+              </svg>
+            </div>
+            {/* Hasham Zafar */}
+            {/* </h2> */}
+            <h4 className="info justify-content-center d-flex">
+              MERN Developer
+            </h4>
           </Col>
-         <Col/>
+          <Col />
 
           <Col md={6}>
-            <div className="bio-text " >
+            <div className="bio-text ">
               <h4>Developer by day. Blogger by night.</h4>
               <p className="">
                 With a patient centred approach, I serve needs of the individual

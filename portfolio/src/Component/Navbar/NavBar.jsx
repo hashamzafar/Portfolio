@@ -13,23 +13,22 @@ const NavBar = () => {
     // } else {
     //   setColorGreen(true) && setColorBlack(false) && setColorWhite(false);
     // }
-     if(window.scrollY >= 751){
-       setColorWhite(true)
-    //  }else if(window.scrollY >= 100){
-    //    setColorGreen(true);
-    //  }else if(window.scrollY >= 10){
-    //   setColorGreen(true);
-     }else{
-       setColorWhite(false);
-     }
+    if (window.scrollY >= 751) {
+      setColorWhite(true);
+      //  }else if(window.scrollY >= 100){
+      //    setColorGreen(true);
+      //  }else if(window.scrollY >= 10){
+      //   setColorGreen(true);
+    } else {
+      setColorWhite(false);
+    }
   };
 
-  
   // useEffect(() => {
-   
+
   // }, [window.scrollY]);
- window.addEventListener("scroll", changeNavbarColor);
- 
+  window.addEventListener("scroll", changeNavbarColor);
+
   console.log(window.scrollY);
   return (
     <Navbar
@@ -38,9 +37,9 @@ const NavBar = () => {
         // `navbar fixed-top color${col}`
         colorWhite
           ? "navbar colorChange fixed-top navbar-dark"
-          // : colorGreen
-          // ? "navbar fixed-top colorGreen"
-          : "navbar fixed-top "
+          : // : colorGreen
+            // ? "navbar fixed-top colorGreen"
+            "navbar fixed-top "
       }
     >
       <Navbar.Brand href="#home">
