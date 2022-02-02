@@ -23,7 +23,7 @@ body {
 
 /* main */
 .background {
-  background-image: url("../public/assets/photo.jpg");
+  background-image: url("../public/assets/BG-mac-black.jpeg");
   /* background-image: url(""); */
 
   background-size: cover;
@@ -38,6 +38,7 @@ body {
   opacity: 0.6;
   color: white;
   border-radius: 15px;
+  margin-top: 300px;
 }
 hr {
   background-color: white;
@@ -150,6 +151,7 @@ hr {
 }
 .patterns {
   height: 20vh;
+  width: 100vw;
 }
 
 svg text {
