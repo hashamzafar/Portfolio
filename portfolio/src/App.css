@@ -3,42 +3,45 @@ html {
 }
 body {
   background-color: rgb(161, 159, 159);
+  width: 98%;
+  
 }
 /* navbar */
 
 .navbar {
   background-color: rgb(161, 159, 159);
+  width: 100%;
 }
 
 .navbar.colorChange {
   background-color: black;
 }
-.navbar.colorGreen {
+/* .navbar.colorGreen {
   background-color: lightgreen;
-}
+} */
 .active {
   text-decoration: underline;
-  color: lightgreen;
+  /* color: lightgreen; */
 }
+/* .logo-img{
+  margin-left: 20%;
+} */
 
-/* main */
 .background {
   background-image: url("../public/assets/BG-mac-black.jpeg");
-  /* background-image: url(""); */
-
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
+  /* height: 100vh;
+  width: 100%; */
 }
 .bg-text {
   background-color: rgb(26, 24, 24);
-  height: 50vh;
-  width: 70vw;
+  /* height: 50vh;
+  width: 80vw; */
   opacity: 0.6;
   color: white;
   border-radius: 15px;
-  margin-top: 300px;
+  margin-top: 15%;
 }
 hr {
   background-color: white;
@@ -108,29 +111,32 @@ hr {
   /* opacity: 0.4; */
   /* position:relative; */
 }
+.col-bg {
+  background-image: url("../public/assets/bio-img.jpg");
+  background-size:cover;
+  opacity: 0.8;
+  overflow: hidden;
+  /* border-radius: 15px; */
+  /* margin-top: 8em; */
+   height: 35%;
+  width: 100%; 
+}
 .bio-text {
   background-color: rgb(26, 24, 24);
-  height: 80vh;
-  width: 42vw;
+  /* height: 80%;
+  width: 42vw; */
   /* opacity: 0.9; */
   color: white;
   border-radius: 15px;
   /* margin-left: 500px; */
-  padding: 3em;
+  padding: 5em;
   /* position:absolute ; */
-  margin-top: 90px;
+  margin-top: 50px;
   margin-left: 100px;
 }
 
-.col-bg {
-  background-image: url("../public/assets/bio-img.jpg");
-  background-size: cover;
-  opacity: 0.8;
-  /* border-radius: 15px; */
-  /* margin-top: 8em; */
-  height: 100vh;
-  width: 100vw;
-}
+
+.polka-dots{overflow: visible!important}
 .info {
   color: black;
 }
@@ -141,30 +147,75 @@ hr {
     rgb(53, 53, 56) 100%
   );
   /* background-size: cover; */
-  height: 20vh;
-  width: 10px;
+  height: 15%;
+  width: 100%;
   padding: 25px;
   margin-left: 15px;
   margin-top: 90px;
   border-radius: 15px;
   opacity: 0.8;
 }
-.patterns {
-  height: 20vh;
-  width: 100vw;
+.wave-text span {
+  display: inline-block;
+  font-size: 3rem;
+  animation: wave 3s ease-in-out infinite;
+  margin-top: 3%;
+  
+
+}
+.wave-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    margin: 2;
+    color: #101010;
+    font-family: 'Arial', sans-serif;
+}
+.wave-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
-svg text {
-  font-family: "Cormorant Garamond", Serif;
-  /* font-family: Lora; */
-  letter-spacing: 7px;
-  stroke: #5d6468;
-  font-size: 10vh;
-  font-weight: 500;
-  stroke-width: 3;
-  /* font-size: 15vw; */
-  animation: textAnimate 5s infinite alternate;
+.wave-text span:nth-child(4) {
+  animation-delay: 0.6s;
 }
+.wave-text span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.wave-text span:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.wave-text span:nth-child(9) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(10) {
+  animation-delay: 0.0s;
+}
+.wave-text span:nth-child(11) {
+  animation-delay: 0.2s;
+}
+.wave-text span:nth-child(12) {
+  animation-delay: 0.4s;
+}
+@keyframes wave {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+
 @media screen and (max-width: 1366px) {
   svg text {
     font-size: 40px;

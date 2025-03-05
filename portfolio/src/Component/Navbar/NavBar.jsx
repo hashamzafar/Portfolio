@@ -13,7 +13,7 @@ const NavBar = () => {
     // } else {
     //   setColorGreen(true) && setColorBlack(false) && setColorWhite(false);
     // }
-    if (window.scrollY >= 751) {
+    if (window.scrollY >= 650) {
       setColorWhite(true);
       //  }else if(window.scrollY >= 100){
       //    setColorGreen(true);
@@ -43,11 +43,11 @@ const NavBar = () => {
       }
     >
       <Navbar.Brand href="#home">
-        <img src="../assets/hat-hz.png" alt=" HZ" width={85} />
+        <img src="../assets/hat-hz.png" alt=" HZ" width={50} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto ">
+        <Nav className="ml-auto">
           <Nav.Link className="nav-setting" href="#jumbo">
             Home
           </Nav.Link>
@@ -55,7 +55,7 @@ const NavBar = () => {
             Bio
           </Nav.Link>
           <Nav.Link href="#certifications">Certifications</Nav.Link>
-          <Nav.Link href="#project">Projects</Nav.Link>
+          <Nav.Link href="#projects">Projects</Nav.Link>
           <Nav.Link href="#contact">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>

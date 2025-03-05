@@ -5,6 +5,7 @@ import Main from "./Component/Main/Main";
 import Bio from "./Component/Bio/Bio";
 import Certifications from "./Component/Certifications/Certifications";
 import Projects from "./Component/Projects/Projects";
+import certificationsData from "./Data/certifications.json"
 function App() {
   return (
     <div className="App">
@@ -12,8 +13,8 @@ function App() {
 
       <Main />
       <Bio />
-      <Certifications />
-      <Projects />
+      <Certifications certificationsData={certificationsData}/>
+      <Projects projectsData={certificationsData}/>
     </div>
   );
 }
