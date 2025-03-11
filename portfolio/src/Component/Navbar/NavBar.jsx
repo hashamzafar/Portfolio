@@ -14,7 +14,7 @@ const NavBar = () => {
     // } else {
     //   setColorGreen(true) && setColorBlack(false) && setColorWhite(false);
     // }
-    if (window.scrollY >= 1400) {
+    if (window.scrollY >= 600) {
       setColorWhite(true);
       //  }else if(window.scrollY >= 100){
       //    setColorGreen(true);
@@ -36,7 +36,7 @@ const NavBar = () => {
       className={
         // `navbar fixed-top color${col}`
         colorWhite
-          ? "navbar colorChange fixed-top navbar-light"
+          ? "navbar colorChange fixed-top navbar-dark"
           : // : colorGreen
             // ? "navbar fixed-top colorGreen"
             "navbar fixed-top navbar-dark "
