@@ -113,7 +113,7 @@ hr {
   /* position:relative; */
 /* } */
 .col-bg {
-  background-image: url("../public/assets/bio-img.jpg");
+  /* background-image: url("../public/assets/bio-img.jpg"); */
   background-size:cover;
   opacity: 0.8;
   overflow: hidden;
