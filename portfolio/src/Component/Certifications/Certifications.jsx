@@ -1,21 +1,53 @@
 import { Carousel } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./certifications.css"; // Stile personalizzato
 
-const Certifications = ({certificationsData}) => {
+const Certifications = ({ certificationsData }) => {
   return (
-    <div className="page-wrap" id="certifications">
-      <div id="home-slider">
-        <div className="swiper-container">
-          <Carousel fade interval={2000} className="slide">
+    <div className="container my-5" id="certifications">
+      <div className="row align-items-center">
+        {/* Sezione Immagini - Carousel */}
+        <div className="col-md-6">
+          <Carousel fade interval={2000} className="slide shadow-lg rounded">
             {certificationsData.map((cert, index) => (
               <Carousel.Item key={index}>
                 <img
-                  className="d-block w-100 img"
+                  className="d-block w-100 img-fluid"
                   src={cert.src}
                   alt={cert.alt || `Slide ${index + 1}`}
                 />
               </Carousel.Item>
             ))}
           </Carousel>
+        </div>
+
+        {/* Sezione Testo - Info */}
+        <div className="col-md-6 text">
+          <h2>Expand your network</h2>
+          <div className="mt-3">
+            <div className="mb-4">
+              <h3>Tell your story with an About page.</h3>
+              <p>
+                Add an "About Me" page to your portfolio website to share your
+                bio and tell your story. You can even display your resume or CV.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3>Let visitors get in touch through a contact page.</h3>
+              <p>
+                Make it easy for potential clients, employers, and collaborators
+                to get in touch by including your email address or creating a
+                form.
+              </p>
+            </div>
+            <div className="mb-4">
+              <h3>Reach your audience with email and social media tools.</h3>
+              <p>
+                Share new work directly with your audience using email
+                campaigns. Add social media integrations to your site.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -24,9 +56,31 @@ const Certifications = ({certificationsData}) => {
 
 export default Certifications;
 
+// import { Carousel } from "react-bootstrap";
 
+// const Certifications = ({certificationsData}) => {
+//   return (
+//     <div className="page-wrap" id="certifications">
+//       <div id="home-slider">
+//         <div className="swiper-container">
+//           <Carousel fade interval={2000} className="slide">
+//             {certificationsData.map((cert, index) => (
+//               <Carousel.Item key={index}>
+//                 <img
+//                   className="d-block w-100 img"
+//                   src={cert.src}
+//                   alt={cert.alt || `Slide ${index + 1}`}
+//                 />
+//               </Carousel.Item>
+//             ))}
+//           </Carousel>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-
+// export default Certifications;
 
 // import { Carousel} from "react-bootstrap";
 
@@ -36,7 +90,7 @@ export default Certifications;
 //       <div className="page-wrap" id="certifications">
 //         <div id="home-slider">
 //           <div className="swiper-container">
-   
+
 //             <Carousel
 //               fade
 //               interval={1000}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Humax",
+    "image": "/assets/projects/humax.jpg",
+    "alt": "Project 1"
+  },
+    {
+    "id": 2,
+    "title": "RadioPlayer",
+    "image": "/assets/projects/radioplayer.png",
+    "alt": "Project 2"
+  },
+  {
+    "id": 3,
+    "title": "Serie B",
+    "image": "/assets/projects/serieb.jpg",
+    "alt": "Project 3"
+  }
+]

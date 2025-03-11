@@ -1,30 +1,30 @@
 import { Row, Col } from "react-bootstrap";
-
+import "./bio.css";
 const Bio = () => {
   return (
     <>
       <div className="bio-bg  " id="bio">
         <Row className="col-bg d-flex ">
+          <Col />
           <Col style={{}} md={3} className="ml-5 bio-intro">
             <div className="">
-              <img src="../assets/hz-logo.png" alt=" HZ" className="logo-img" />
-              <div class="wave-container">
-                <h1 class="wave-text">
-                  <text>Hasham Zafar</text>
-                </h1>
-              </div>
+              <img
+                src="../assets/bio-profile-img.jpg"
+                alt=" HZ"
+                className="profile-img"
+              />
+              <h2 class="info justify-content-center d-flex">Hasham Zafar</h2>
+              <h4 className="info justify-content-center d-flex">
+                MERN Developer
+              </h4>
             </div>
-
-            <h4 className="info justify-content-center d-flex">
-              MERN Developer
-            </h4>
           </Col>
-          <Col />
+          <Col md={1} />
 
-          <Col md={6}>
+          <Col md={5}>
             <div className="bio-text ">
               <h4>Developer by day. Blogger by night.</h4>
-              <p className="">
+              <p className="bio-description">
                 I am a passionate Full-Stack Developer who thrives on solving
                 complex problems and creating seamless digital experiences. With
                 a strong foundation in both front-end and back-end development,
@@ -48,6 +48,7 @@ const Bio = () => {
               </p>
             </div>
           </Col>
+          <Col />
         </Row>
       </div>
     </>

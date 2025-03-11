@@ -9,6 +9,7 @@ import {
   SiJavascript,
   SiBootstrap,
 } from "react-icons/si";
+import "./main.css";
 const Main = () => {
   return (
     <>

@@ -1,5 +1,6 @@
 import { Navbar, Nav } from "react-bootstrap";
 import { useEffect, useState } from "react";
+import "./navBar.css";
 const NavBar = () => {
   // const [color, setColor] = useState("black")
   const [colorBlack, setColorBlack] = useState(true);
@@ -13,7 +14,7 @@ const NavBar = () => {
     // } else {
     //   setColorGreen(true) && setColorBlack(false) && setColorWhite(false);
     // }
-    if (window.scrollY >= 650) {
+    if (window.scrollY >= 1400) {
       setColorWhite(true);
       //  }else if(window.scrollY >= 100){
       //    setColorGreen(true);
@@ -29,17 +30,16 @@ const NavBar = () => {
   // }, [window.scrollY]);
   window.addEventListener("scroll", changeNavbarColor);
 
-  console.log(window.scrollY);
   return (
     <Navbar
       expand="lg"
       className={
         // `navbar fixed-top color${col}`
         colorWhite
-          ? "navbar colorChange fixed-top navbar-dark"
+          ? "navbar colorChange fixed-top navbar-light"
           : // : colorGreen
             // ? "navbar fixed-top colorGreen"
-            "navbar fixed-top "
+            "navbar fixed-top navbar-dark "
       }
     >
       <Navbar.Brand href="#home">

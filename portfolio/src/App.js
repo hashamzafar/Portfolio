@@ -6,16 +6,21 @@ import Bio from "./Component/Bio/Bio";
 import Certifications from "./Component/Certifications/Certifications";
 import Projects from "./Component/Projects/Projects";
 import certificationsData from "./Data/certifications.json"
+import projectsData from "./Data/projects.json"
+import Footer from "./Component/Footer/Footer";
+import Contact from "./Component/Contact/Contact";
 function App() {
+ 
   return (
-    <div className="App">
+    <>
       <NavBar />
-
       <Main />
       <Bio />
       <Certifications certificationsData={certificationsData}/>
-      <Projects projectsData={certificationsData}/>
-    </div>
+      <Projects projectsData={projectsData}/>
+      <Contact/>
+      <Footer/>
+    </>
   );
 }
 
